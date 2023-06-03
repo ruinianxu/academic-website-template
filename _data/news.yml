@@ -1,6 +1,33 @@
-- date: 1 January, 1941
-  headline: "Example news here"
+- date: Jan, 2023
+  headline: "One paper Keypoint-GraspNet accepted to <mark>ICRA 2023</mark>"
+  
+- date: August, 2022
+  headline: "Excited to join Amazon Robotics of <mark>Amazon</mark> as an Applied Scientist intern"
 
-- date: 1 January, 1940
-  headline: "Example news here"
+- date: July, 2022
+  headline: "One paper GKNet accepted to <mark>The International Journal of Robotics Research</mark>"
 
+- date: June, 2022
+  headline: "One paper Symbolic Goal Learning in a Hybrid, Modular Framework for Human Instruction Following accepted to <mark>RA-L with IROS 2022 options</mark>"
+
+- date: May, 2022
+  headline: "Excited to join The Fundamental AI Research (FAIR) team of <mark>Meta</mark> as an intern"
+
+- date: March, 2021
+  headline: "One paper Affordance Keypoint Network accepted to <mark>RA-L with ICRA 2021 options</mark>"
+  
+- date: March, 2021
+  headline: "One paper A Joint Network for Grasp Detection Conditioned on Natural Language Commands accepted to <mark>ICRA 2021</mark>"
+  
+- date: June, 2019
+  headline: "One paper Toward Affordance Detection and Ranking on Novel Object for Real-world Robotic Manipulation accepted to <mark>RA-L with IROS 2021 options</mark>"
+  
+- date: March, 2019
+  headline: "One paper Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images accepted to <mark>RA-L with ICRA 2021 options</mark>"
+
+- date: June, 2018
+  headline: "One paper Real-World Multiobject, Multigrasp Detection accepted to <mark>RA-L with IROS 2021 options</mark>"
+  
+- date: June, 2018
+  headline: "One paper The Helping Hand: An Assitive Manipulation Framework Using Augmented Reality and Tongue-Drive Interfaces accepted to <mark>IEEE Engineering in Medicine and 
+Biology Society</mark>"
