@@ -60,7 +60,8 @@
   number={4},
   pages={3355--3362},
   year={2018},
-  publisher={IEEE}
+  publisher={IEEE},
+  abstract={A deep learning architecture is proposed to predict graspable locations for robotic manipulation. It considers situations where no, one, or multiple object(s) are seen. By defining the learning problem to be classified with null hypothesis competition instead of regression, the deep neural network with red, green, blue and depth (RGB-D) image input predicts multiple grasp candidates for a single object or multiple objects, in a single shot. The method outperforms state-of-the-art approaches on the Cornell dataset with 96.0% and 96.1% accuracy on imagewise and object-wise splits, respectively. Evaluation on a multiobject dataset illustrates the generalization capability of the architecture. Grasping experiments achieve 96.0% grasp localization and 89.0% grasping success rates on a test set of household objects. The real-time process takes less than 0.25 s from image to plan.},
 }
 
 @article{chu2019learning,
@@ -71,7 +72,8 @@
   number={2},
   pages={1140--1147},
   year={2019},
-  publisher={IEEE}
+  publisher={IEEE},
+  abstract={This letter presents a deep learning framework to predict the affordances of object parts for robotic manipulation. The framework segments affordance maps by jointly detecting and localizing candidate regions within an image. Rather than requiring annotated real-world images, the framework learns from synthetic data and adapts to real-world data without supervision. The method learns domain-invariant region proposal networks and task-level domain adaptation components with regularization on the predicted domains. A synthetic version of the UMD data set is collected for autogenerating annotated, synthetic input data. Experimental results show that the proposed method outperforms an unsupervised baseline, and achieves performance close to state-of-the-art supervised approaches. An ablation study establishes the performance gap between the proposed method and the supervised equivalent (30%). Real-world manipulation experiments demonstrate use of the affordance segmentations for task execution, which achieves the same performance with supervised approaches.},
 }
 
 @article{chu2019toward,
@@ -82,7 +84,8 @@
   number={4},
   pages={4070--4077},
   year={2019},
-  publisher={IEEE}
+  publisher={IEEE},
+  abstract={This letter presents a framework to detect and rank affordances of novel objects to assist with robotic manipulation tasks. The framework segments the affordance map of unseen objects using region-based affordance segmentation. Detected affordances define an initial state from which to generate action primitives for manipulation via the planning domain definition language (PDDL). The proposed category-agnostic affordance segmentation approach generalizes learned affordances to unseen objects by utilizing binary classification on proposed instance masks. The predicted pixel-wise level affordances are ranked by KL-divergence, augmenting the available affordance choices for manipulation tasks with non-primary affordances of an object. Experimental results show that the proposed method achieves state-of-the-art performance on affordance segmentation of novel objects, and outperforms baselines on affordance ranking. Actual robotic manipulation scenarios demonstrate the use of affordance detection with PDDL-generated action primitives for task execution. Prediction of ranked affordances on unseen objects provides flexibility to accomplish goal-oriented tasks.},
 }
 
 @inproceedings{chen2021joint,
@@ -91,7 +94,16 @@
   booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
   pages={4576--4582},
   year={2021},
-  organization={IEEE}
+  organization={IEEE},
+  abstract={We consider the task of grasping a target object based on a natural language command query. Previous work primarily focused on localizing the object given the query, which requires a separate grasp detection module to grasp it. The cascaded application of two pipelines incurs errors in overlapping multi-object cases due to ambiguity in the individal outputs. This work proposes a model named Command Grasping Network (CGNet) to directly output command satisficing grasps from RGB image and textual command inputs. A dataset with ground truth (image, command, grasps) tuple is generated based on the VMRD dataset to train the proposed network. Experimental results on the generated test set show that CGNet outperforms a cascaded object-retrieval and grasp detection baseline by a large margin. Three physical experiments demonstrate the functionality and performance of CGNet.},
+}
+
+@unpublished{chen2022keypoint,
+  title={Keypoint-GraspNet: Keypoint-based 6-DoF Grasp Generation from the Monocular RGB-D input},
+  author={Chen, Yiye and Lin, Yunzhi and Ruinian, Xu and Vela, Patricio},
+  journal={arXiv preprint arXiv:2209.08752},
+  year={2022},
+  abstract={Great success has been achieved in the 6-DoF grasp learning from the point cloud input, yet the computational cost due to the point set orderlessness remains a concern. Alternatively, we explore the grasp generation from the RGB-D input in this paper. The proposed solution, Keypoint-GraspNet, detects the projection of the gripper keypoints in the image space and then recover the SE(3) poses with a PnP algorithm. A synthetic dataset based on the primitive shape and the grasp family is constructed to examine our idea. Metric-based evaluation reveals that our method outperforms the baselines in terms of the grasp proposal accuracy, diversity, and the time cost. Finally, robot experiments show high success rate, demonstrating the potential of the idea in the real-world applications.},
 }
 
 @article{xu2021affordance,
@@ -102,7 +114,8 @@
   number={2},
   pages={2870--2877},
   year={2021},
-  publisher={IEEE}
+  publisher={IEEE},
+  abstract={This letter investigates the addition of keypoint detections to a deep network affordance segmentation pipeline. The intent is to better interpret the functionality of object parts from a manipulation perspective. While affordance segmentation does provide label information about the potential use of object parts, it lacks predictions on the physical geometry that would support such use. The keypoints remedy the situation by providing structured predictions regarding position, direction, and extent. To support joint training of affordances and keypoints, a new dataset is created based on the UMD dataset. Called the UMD+GT affordance dataset, it emphasizes household objects and affordances. The dataset has a uniform representation for five keypoints that encodes information about where and how to manipulate the associated affordance. Visual processing benchmarking shows that the trained network, called AffKp, achieves the state-of-the-art performance on affordance segmentation and satisfactory result on keypoint detection. Manipulation experiments show more stable detection of the operating position for AffKp versus segmentation-only methods and the ability to infer object part pose and operating direction for task execution.},
 }
 
 @inproceedings{chu2018helping,
@@ -111,7 +124,8 @@
   booktitle={2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
   pages={2158--2161},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  abstract={A human-in-the-loop system is proposed to enable collaborative manipulation tasks for person with physical disabilities. Studies show that the cognitive burden of subject reduces with increased autonomy of assistive system. Our framework obtains high-level intent from the user to specify manipulation tasks. The system processes sensor input to interpret the user's environment. Augmented reality glasses provide ego-centric visual feedback of the interpretation and summarize robot affordances on a menu. A tongue drive system serves as the input modality for triggering a robotic arm to execute the tasks. Assistance experiments compare the system to Cartesian control and to state-of-the-art approaches. Our system achieves competitive results with faster completion time by simplifying manipulation tasks.},
 }
 
 @article{xu2022gknet,
@@ -122,14 +136,16 @@
   number={4},
   pages={361--389},
   year={2022},
-  publisher={SAGE Publications Sage UK: London, England}
+  publisher={SAGE Publications Sage UK: London, England},
+  abstract={Contemporary grasp detection approaches employ deep learning to achieve robustness to sensor and object model uncertainty. The two dominant approaches design either grasp-quality scoring or anchor-based grasp recognition networks. This paper presents a different approach to grasp detection by treating it as keypoint detection in image-space. The deep network detects each grasp candidate as a pair of keypoints, convertible to the grasp representation g = \{x, y, w, θ\}, rather than a triplet or quartet of corner points. Decreasing the detection difficulty by grouping keypoints into pairs boosts performance. To promote capturing dependencies between keypoints, a non-local module is incorporated into the network design. A final filtering strategy based on discrete and continuous orientation prediction removes false correspondences and further improves grasp detection performance. GKNet, the approach presented here, achieves a good balance between accuracy and speed on the Cornell and the abridged Jacquard datasets (96.9\% and 98.39\% at 41.67 and 23.26 fps). Follow-up experiments on a manipulator evaluate GKNet using four types of grasping experiments reflecting different nuisance sources: static grasping, dynamic grasping, grasping at varied camera angles, and bin picking. GKNet outperforms reference baselines in static and dynamic grasping experiments while showing robustness to varied camera viewpoints and moderate clutter. The results confirm the hypothesis that grasp keypoints are an effective output representation for deep grasp networks that provide robustness to expected nuisance factors.},
 }
 
-@article{chu2019recognizing,
+@unpublished{chu2019recognizing,
   title={Recognizing object affordances to support scene reasoning for manipulation tasks},
   author={Chu, Fu-Jen and Xu, Ruinian and Tang, Chao and Vela, Patricio A},
   journal={arXiv preprint arXiv:1909.05770},
-  year={2019}
+  year={2019},
+  abstract={Affordance information about a scene provides important clues as to what actions may be executed in pursuit of meeting a specified goal state. Thus, integrating affordance-based reasoning into symbolic action plannning pipelines would enhance the flexibility of robot manipulation. Unfortunately, the top performing affordance recognition methods use object category priors to boost the accuracy of affordance detection and segmentation. Object priors limit generalization to unknown object categories. This paper describes an affordance recognition pipeline based on a category-agnostic region proposal network for proposing instance regions of an image across categories. To guide affordance learning in the absence of category priors, the training process includes the auxiliary task of explicitly inferencing existing affordances within a proposal. Secondly, a self-attention mechanism trained to interpret each proposal learns to capture rich contextual dependencies through the region. Visual benchmarking shows that the trained network, called AffContext, reduces the performance gap between object-agnostic and object-informed affordance recognition. AffContext is linked to the Planning Domain Definition Language (PDDL) with an augmented state keeper for action planning across temporally spaced goal-oriented tasks. Manipulation experiments show that AffContext can successfully parse scene content to seed a symbolic planner problem specification, whose execution completes the target task. Additionally, task-oriented grasping for cutting and pounding actions demonstrate the exploitation of multiple affordances for a given object to complete specified tasks.},
 }
 
 @inproceedings{chu2018hands,
@@ -138,42 +154,40 @@
   booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   pages={5463--5468},
   year={2018},
-  organization={IEEE}
+  organization={IEEE},
+  abstract={A human-in-the-loop system is proposed to enable hands-free collaborative manipulation for people with physical disabilities. Studies show that the cognitive burden of interfacing with a robotic assistant decreases with increased robot autonomy. Incorporating modern advances in perception with augmented reality, this paper describes a framework for obtaining high-level intents from the user to specify manipulation tasks for execution. Augmented reality glasses provide an egocentric perspective to the robot. The glasses also provide visual feedback to users on a virtual menu showing a summary of robot affordances. The system processes the vision input to interpret the users environment. A Tongue Drive System serves as the input modality for triggering task execution by the robotic arm. Several manipulation experiments are performed with comparison to Cartesian control. The outcomes are also compared to reported state-of-the-art approaches. The results demonstrate competitive performance with minimal user input requirements.},
 }
 
-@article{lin2022primitive,
+@unpublished{lin2022primitive,
   title={Primitive Shape Recognition for Object Grasping},
   author={Lin, Yunzhi and Tang, Chao and Chu, Fu-Jen and Xu, Ruinian and Vela, Patricio A},
   journal={arXiv preprint arXiv:2201.00956},
-  year={2022}
+  year={2022},
+  abstract={Shape informs how an object should be grasped, both in terms of where and how. As such, this paper describes a segmentation-based architecture for decomposing objects sensed with a depth camera into multiple primitive shapes, along with a post-processing pipeline for robotic grasping. Segmentation employs a deep network, called PS-CNN, trained on synthetic data with 6 classes of primitive shapes and generated using a simulation engine. Each primitive shape is designed with parametrized grasp families, permitting the pipeline to identify multiple grasp candidates per shape region. The grasps are rank ordered, with the first feasible one chosen for execution. For task-free grasping of individual objects, the method achieves a 94.2% success rate placing it amongst the top performing grasp methods when compared to top-down and SE(3)-based approaches. Additional tests involving variable viewpoints and clutter demonstrate robustness to setup. For task-oriented grasping, PS-CNN achieves a 93.0% success rate. Overall, the outcomes support the hypothesis that explicitly encoding shape primitives within a grasping pipeline should boost grasping performance, including task-free and task-relevant grasp prediction.},
 }
 
-@article{chen2022keypoint,
-  title={Keypoint-GraspNet: Keypoint-based 6-DoF Grasp Generation from the Monocular RGB-D input},
-  author={Chen, Yiye and Lin, Yunzhi and Vela, Patricio},
-  journal={arXiv preprint arXiv:2209.08752},
-  year={2022}
-}
-
-@article{chen2023wdiscood,
+@unpublished{chen2023wdiscood,
   title={WDiscOOD: Out-of-Distribution Detection via Whitened Linear Discriminative Analysis},
   author={Chen, Yiye and Lin, Yunzhi and Xu, Ruinian and Vela, Patricio A},
   journal={arXiv preprint arXiv:2303.07543},
-  year={2023}
+  year={2023},
+  abstract={Deep neural networks are susceptible to generating overconfident yet erroneous predictions when presented with data beyond known concepts. This challenge underscores the importance of detecting out-of-distribution (OOD) samples in the open world. In this work, we propose a novel feature-space OOD detection score that jointly reasons with both class-specific and class-agnostic information. Specifically, our approach utilizes Whitened Linear Discriminant Analysis to project features into two subspaces - the discriminative and residual subspaces - in which the ID classes are maximally separated and closely clustered, respectively. The OOD score is then determined by combining the deviation from the input data to the ID distribution in both subspaces. The efficacy of our method, named WDiscOOD, is verified on the large-scale ImageNet-1k benchmark, with six OOD datasets that covers a variety of distribution shifts. WDiscOOD demonstrates superior performance on deep classifiers with diverse backbone architectures, including CNN and vision transformer. Furthermore, we also show that our method can more effectively detect novel concepts in representation space trained with contrastive objectives, including supervised contrastive loss and multi-modality contrastive loss.},
 }
 
-@article{chen2023zero,
+@unpublished{chen2023zero,
   title={Zero-Shot Object Searching Using Large-scale Object Relationship Prior},
   author={Chen, Hongyi and Xu, Ruinian and Cheng, Shuo and Vela, Patricio A and Xu, Danfei},
   journal={arXiv preprint arXiv:2303.06228},
-  year={2023}
+  year={2023},
+  abstract={Home-assistant robots have been a long-standing research topic, and one of the biggest challenges is searching for required objects in housing environments. Previous object-goal navigation requires the robot to search for a target object category in an unexplored environment, which may not be suitable for home-assistant robots that typically have some level of semantic knowledge of the environment, such as the location of static furniture. In our approach, we leverage this knowledge and the fact that a target object may be located close to its related objects for efficient navigation. To achieve this, we train a graph neural network using the Visual Genome dataset to learn the object co-occurrence relationships and formulate the searching process as iteratively predicting the possible areas where the target object may be located. This approach is entirely zero-shot, meaning it doesn't require new accurate object correlation in the test environment. We empirically show that our method outperforms prior correlational object search algorithms. As our ultimate goal is to build fully autonomous assistant robots for everyday use, we further integrate the task planner for parsing natural language and generating task-completing plans with object navigation to execute human instructions. We demonstrate the effectiveness of our proposed pipeline in both the AI2-THOR simulator and a Stretch robot in a real-world environment.},
 }
 
-@article{chen2023kgnv2,
+@unpublished{chen2023kgnv2,
   title={KGNv2: Separating Scale and Pose Prediction for Keypoint-based 6-DoF Grasp Pose Synthesis on RGB-D input},
   author={Chen, Yiye and Xu, Ruinian and Lin, Yunzhi and Vela, Patricio A},
   journal={arXiv preprint arXiv:2303.05617},
-  year={2023}
+  year={2023},
+  abstract={We propose a new 6-DoF grasp pose synthesis approach from 2D/2.5D input based on keypoints. Keypoint-based grasp detector from image input has demonstrated promising results in the previous study, where the additional visual information provided by color images compensates for the noisy depth perception. However, it relies heavily on accurately predicting the location of keypoints in the image space. In this paper, we devise a new grasp generation network that reduces the dependency on precise keypoint estimation. Given an RGB-D input, our network estimates both the grasp pose from keypoint detection as well as scale towards the camera. We further re-design the keypoint output space in order to mitigate the negative impact of keypoint prediction noise to Perspective-n-Point (PnP) algorithm. Experiments show that the proposed method outperforms the baseline by a large margin, validating the efficacy of our approach. Finally, despite trained on simple synthetic objects, our method demonstrate sim-to-real capacity by showing competitive results in real-world robot experiments.},
 }
 
 @article{xu2022sgl,
@@ -184,5 +198,6 @@
   number={4},
   pages={10375--10382},
   year={2022},
-  publisher={IEEE}
+  publisher={IEEE},
+  abstract={This paper investigates human instruction following for robotic manipulation via a hybrid, modular system with symbolic and connectionist elements. Symbolic methods build modular systems with semantic parsing and task planning modules for producing sequences of actions from natural language requests. Modern connectionist methods employ deep neural networks that learn visual and linguistic features for mapping inputs to a sequence of low-level actions, in an end-to-end fashion. The hybrid, modular system blends these two approaches to create a modular framework: it formulates instruction following as symbolic goal learning via deep neural networks followed by task planning via symbolic planners. Connectionist and symbolic modules are bridged with Planning Domain Definition Language. The vision-and-language learning network predicts its goal representation, which is sent to a planner for producing a task-completing action sequence. For improving the flexibility of natural language, we further incorporate implicit human intents with explicit human instructions. To learn generic features for vision and language, we propose to separately pretrain vision and language encoders on scene graph parsing and semantic textual similarity tasks. Benchmarking evaluates the impacts of different components of, or options for, the vision-and-language learning model and shows the effectiveness of pretraining strategies. Manipulation experiments conducted in the simulator AI2THOR show the robustness of the framework to novel scenarios.},
 }
